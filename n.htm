@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            min-height: 100vh;
+            background-image: url(background.png);
+            background-position: center;
+            background-size: cover;
+            padding: 5%;
+            position: relative;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 160px;
+            cursor: pointer;
+        }
+
+        nav {
+            flex: 1;
+            padding-left: 60px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .content {
+            margin-top: 10%;
+        }
+
+        .content h1 {
+            font-size: 60px;
+            font-weight: 100;
+            margin-top: 24px;
+            margin-bottom: 15px;
+            color: #232d60;
+        }
+
+        .content p {
+            font-size: 20px;
+            color: #6A7199;
+        }
+
+        .content .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #87adfe, #ff77cd);
+            border-radius: 6px;
+            padding: 10px 20px;
+            color: #fff;
+            box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+        }
+
+        .arrow-icon {
+            margin-top: 40px;
+            display: flex;
+        }
+
+        .arrow-icon img {
+            width: 40px;
+            margin-right: 25px;
+        }
+
+        .featuere-img {
+            height: 90%;
+            position: absolute;
+            bottom: 0;
+            right: 10%;
+        }
+
+        .social-media {
+            position: absolute;
+            bottom: 5%;
+            left: 5%;
+        }
+
+        .social-media a {
+            text-decoration: none;
+            color: #6A7199;
+            padding-right: 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 2%;
+            }
+
+            .navbar {
+                flex-wrap: wrap;
+            }
+
+            .logo {
+                margin-bottom: 20px;
+            }
+
+            nav {
+                padding-left: 20px;
+            }
+
+            .content {
+                margin-top: 5%;
+            }
+
+            .arrow-icon {
+                margin-top: 20px;
+            }
+
+            .featuere-img {
+                right: 5%;
+            }
+
+            .social-media {
+                left: 2%;
+                bottom: 2%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <div class="navbar"> 
+            <img src="logo.png" alt="Trust me, I don't eat the picture!" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Collection</a></li>
+                    <li><a href="">Category</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="cart.png" alt="Trust me, I don't eat the picture!">
+        </div>
+
+        <div class="content">
+            <a href="" class="btn">2020 collection</a>
+            <h1>You should<br>Always feel pretty</h1>
+            <p>Clothes that are sure to heat up</p>
+        
+            <div class="arrow-icon">
+                <img src="back-arrow.png" alt="back arrow">
+                <img src="next-arrow.png" alt="next arrow">
+            </div>
+        
+            <img src="img.png" alt="Trust me, it's me" class="featuere-img">
+        
+            <div class="social-media">
+                <a href="">Facebook</a>
+                <a href="">Instagram</a>
+                <a href="">Twitter</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
